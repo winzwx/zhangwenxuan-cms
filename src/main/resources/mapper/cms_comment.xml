@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<select id="">
+	SELECT * FROM cms_comment
+	</select>
+	
+	<select id="">
+	SELECT * FROM cms_comment WHERE id=#{id}
+	</select>
+	
+	<insert id="">
+	INSERT INTO cms_comment(articleId,userId,content,created)VALUES 
+	(#{articleId},#{userId},#{content},#{created})
+	</insert>
+	
+	<delete id="">
+	DELETE FROM cms_comment WHERE id in(${ids})
+	</delete>
+	
+	<update id="">
+	UPDATE cms_comment
+ 	SET articleId=#{articleId},userId=#{userId},content=#{content},created=#{created} 
+	WHERE id=#{id}
+	</update>
+	
+</mapper>

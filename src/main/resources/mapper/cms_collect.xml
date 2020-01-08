@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<select id="" resultType="Collect">
+	SELECT * FROM cms_collect
+	</select>
+	
+	<select id="" resultType="Collect">
+	SELECT * FROM cms_collect WHERE id=#{id}
+	</select>
+	
+	<insert id="">
+	INSERT INTO cms_collect(text,url,created,user_id)VALUES 
+	(#{text},#{url},#{created},#{user_id})
+	</insert>
+	
+	<delete id="">
+	DELETE FROM cms_collect WHERE id in(${ids})
+	</delete>
+	
+	<update id="">
+	UPDATE cms_collect
+ 	SET text=#{text},url=#{url},created=#{created},user_id=#{user_id} 
+	WHERE id=#{id}
+	</update>
+	
+</mapper>
