@@ -43,6 +43,9 @@ public class Collect {
 	public void setUser_id(Integer user_id) {
 		this.user_id = user_id;
 	}
-	
+	@Override
+	public String toString() {
+		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", user_id=" + user_id + "]";
+	}
 	
 }

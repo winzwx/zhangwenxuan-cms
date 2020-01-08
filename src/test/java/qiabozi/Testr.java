@@ -8,18 +8,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.zwx.xm.dao.VoteContentDao;
 
-import com.zwx.xm.dao.Vote_ContentDao;
-import com.zwx.xm.entity.Vote_Content;
+import com.zwx.xm.entity.VoteContent;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring-beans.xml")
 public class Testr {
 	@Autowired
-	private Vote_ContentDao vote_ContentDao;
+	private VoteContentDao voteContentDao;
 	@Test
 	public void test1() {
-		List<Vote_Content> list = vote_ContentDao.select(new Vote_Content());
+		List<VoteContent> list = voteContentDao.select(new VoteContent());
 		System.out.println(list);
 	}
 }

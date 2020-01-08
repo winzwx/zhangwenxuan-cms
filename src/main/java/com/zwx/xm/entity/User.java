@@ -1,111 +1,145 @@
 package com.zwx.xm.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class User {
 	/**  **/
 	private Integer id;
-	/** µÇÂ¼Ãû³Æ **/
+	/** ç™»å½•åç§° **/
 	private String username;
-	/** ÓÃ»§Í·Ïñ **/
+	/** ç”¨æˆ·å¤´åƒ **/
 	private String headimg;
-	/** µÇÂ¼ÃÜÂë **/
+	/** ç™»å½•å¯†ç  **/
 	private String password;
-	/** êÇ³Æ **/
+	/** æ˜µç§° **/
 	private String nickname;
-	/** ÉúÈÕ **/
+	/** ç”Ÿæ—¥ **/
 	private Date birthday;
-	/** ĞÔ±ğ£¬1£ºÄĞ£»2£ºÅ® **/
+	/** æ€§åˆ«ï¼Œ1ï¼šç”·ï¼›2ï¼šå¥³ **/
 	private Integer gender;
-	/** 0:Õı³£,1:½ûÓÃ **/
+	/** 0:æ­£å¸¸,1:ç¦ç”¨ **/
 	private Integer locked;
-	/** »ı·Ö **/
+	/** ç§¯åˆ† **/
 	private Integer score;
-	/** 0:ÆÕÍ¨ÓÃ»§,1:¹ÜÀíÔ± **/
+	/** 0:æ™®é€šç”¨æˆ·,1:ç®¡ç†å‘˜ **/
 	private String role;
-	/** ¸öÈË²©¿ÍÍøÖ· **/
+	/** ä¸ªäººåšå®¢ç½‘å€ **/
 	private String url;
-	/** ´´½¨Ê±¼ä **/
+	/** åˆ›å»ºæ—¶é—´ **/
 	private Date create_time;
-	/** ĞŞ¸ÄÊ±¼ä **/
+	/** ä¿®æ”¹æ—¶é—´ **/
 	private Date update_time;
+	
 	public Integer getId() {
 		return id;
 	}
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
+
 	public String getUsername() {
 		return username;
 	}
+
 	public void setUsername(String username) {
 		this.username = username;
 	}
+
 	public String getHeadimg() {
 		return headimg;
 	}
+
 	public void setHeadimg(String headimg) {
 		this.headimg = headimg;
 	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	public String getNickname() {
 		return nickname;
 	}
+
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
+
 	public Date getBirthday() {
 		return birthday;
 	}
+
 	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
 	}
+
 	public Integer getGender() {
 		return gender;
 	}
+
 	public void setGender(Integer gender) {
 		this.gender = gender;
 	}
+
 	public Integer getLocked() {
 		return locked;
 	}
+
 	public void setLocked(Integer locked) {
 		this.locked = locked;
 	}
+
 	public Integer getScore() {
 		return score;
 	}
+
 	public void setScore(Integer score) {
 		this.score = score;
 	}
+
 	public String getRole() {
 		return role;
 	}
+
 	public void setRole(String role) {
 		this.role = role;
 	}
+
 	public String getUrl() {
 		return url;
 	}
+
 	public void setUrl(String url) {
 		this.url = url;
 	}
+
 	public Date getCreate_time() {
 		return create_time;
 	}
+
 	public void setCreate_time(Date create_time) {
 		this.create_time = create_time;
 	}
+
 	public Date getUpdate_time() {
 		return update_time;
 	}
+
 	public void setUpdate_time(Date update_time) {
 		this.update_time = update_time;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", headimg=" + headimg + ", password=" + password
+				+ ", nickname=" + nickname + ", birthday=" + birthday + ", gender=" + gender + ", locked=" + locked
+				+ ", score=" + score + ", role=" + role + ", url=" + url + ", create_time=" + create_time
+				+ ", update_time=" + update_time + "]";
 	}
 	
 }

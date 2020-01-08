@@ -3,13 +3,13 @@ package com.zwx.xm.entity;
 public class Comment {
 	/**  **/
 	private Integer id;
-	/** 文章Id **/
+	/** 鏂囩珷Id **/
 	private Integer articleId;
-	/** 用户Id **/
+	/** 鐢ㄦ埛Id **/
 	private Integer userId;
-	/** 评论内容 **/
+	/** 璇勮鍐呭 **/
 	private String content;
-	/** 评论时间 **/
+	/** 璇勮鏃堕棿 **/
 	private String created;
 	public Integer getId() {
 		return id;
@@ -40,6 +40,11 @@ public class Comment {
 	}
 	public void setCreated(String created) {
 		this.created = created;
+	}
+	@Override
+	public String toString() {
+		return "Comment [id=" + id + ", articleId=" + articleId + ", userId=" + userId + ", content=" + content
+				+ ", created=" + created + "]";
 	}
 	
 }

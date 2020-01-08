@@ -1,11 +1,9 @@
 package com.zwx.xm.entity;
 
-
-
 public class Tag {
 	/**  **/
 	private Integer id;
-	/** ±êÇ©Ãû³Æ **/
+	/** æ ‡ç­¾åç§° **/
 	private String tagname;
 	public Integer getId() {
 		return id;
@@ -19,6 +17,9 @@ public class Tag {
 	public void setTagname(String tagname) {
 		this.tagname = tagname;
 	}
-	
+	@Override
+	public String toString() {
+		return "Tag [id=" + id + ", tagname=" + tagname + "]";
+	}
 	
 }

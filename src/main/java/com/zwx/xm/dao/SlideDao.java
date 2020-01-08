@@ -1,37 +1,7 @@
 package com.zwx.xm.dao;
 
-public class SlideDao {
-	/**  **/
-	private Integer id;
-	/** 标题 **/
-	private String title;
-	/** 图片地址 **/
-	private String picture;
-	/** 链接url **/
-	private String url;
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getPicture() {
-		return picture;
-	}
-	public void setPicture(String picture) {
-		this.picture = picture;
-	}
-	public String getUrl() {
-		return url;
-	}
-	public void setUrl(String url) {
-		this.url = url;
-	}
+import com.zwx.xm.entity.Slide;
+
+public interface SlideDao extends BaseDao<Slide> {
 	
 }

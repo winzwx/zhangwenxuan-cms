@@ -3,17 +3,17 @@ package com.zwx.xm.entity;
 public class Settings {
 	/**  **/
 	private Integer id;
-	/** ÍøÕ¾ÓòÃû **/
+	/** ç½‘ç«™åŸŸå **/
 	private String site_domain;
-	/** ÍøÕ¾Ãû³Æ **/
+	/** ç½‘ç«™åç§° **/
 	private String site_name;
-	/** ÎÄÕÂÁĞ±íÊı¾İÌõÊı **/
+	/** æ–‡ç« åˆ—è¡¨æ•°æ®æ¡æ•° **/
 	private Integer article_list_size;
-	/** ÂÖ²¥Í¼×î´óÌõÊı **/
+	/** è½®æ’­å›¾æœ€å¤§æ¡æ•° **/
 	private Integer slide_size;
-	/** ¹ÜÀíÔ±ÕÊºÅ **/
+	/** ç®¡ç†å‘˜å¸å· **/
 	private String admin_username;
-	/** ¹ÜÀíÔ±ÃÜÂë **/
+	/** ç®¡ç†å‘˜å¯†ç  **/
 	private String admin_password;
 	public Integer getId() {
 		return id;
@@ -56,6 +56,12 @@ public class Settings {
 	}
 	public void setAdmin_password(String admin_password) {
 		this.admin_password = admin_password;
+	}
+	@Override
+	public String toString() {
+		return "Settings [id=" + id + ", site_domain=" + site_domain + ", site_name=" + site_name
+				+ ", article_list_size=" + article_list_size + ", slide_size=" + slide_size + ", admin_username="
+				+ admin_username + ", admin_password=" + admin_password + "]";
 	}
 	
 }

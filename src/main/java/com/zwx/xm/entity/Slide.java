@@ -3,11 +3,11 @@ package com.zwx.xm.entity;
 public class Slide {
 	/**  **/
 	private Integer id;
-	/** 标题 **/
+	/** 鏍囬 **/
 	private String title;
-	/** 图片地址 **/
+	/** 鍥剧墖鍦板潃 **/
 	private String picture;
-	/** 链接url **/
+	/** 閾炬帴url **/
 	private String url;
 	public Integer getId() {
 		return id;
@@ -32,6 +32,10 @@ public class Slide {
 	}
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	@Override
+	public String toString() {
+		return "Slide [id=" + id + ", title=" + title + ", picture=" + picture + ", url=" + url + "]";
 	}
 	
 }

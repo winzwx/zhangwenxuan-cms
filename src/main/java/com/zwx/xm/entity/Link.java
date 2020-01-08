@@ -35,5 +35,9 @@ public class Link {
 	public void setCreated(Date created) {
 		this.created = created;
 	}
+	@Override
+	public String toString() {
+		return "Link [id=" + id + ", text=" + text + ", url=" + url + "]";
+	}
 	
 }
